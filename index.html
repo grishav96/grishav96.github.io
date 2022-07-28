@@ -9,14 +9,14 @@
     <meta http-equiv="Scanner" content="NoAuto">
     <meta http-equiv="DATAMATRIX" content="Disabled">
 <!--     <meta http-equiv="ALL_DECODERS" content="Enabled"> -->
-    <meta http-equiv="ScannerProcessed" content="Javascript:handleScan('%s','%s','%s','%s','%s');">
+    <meta http-equiv="ScannerProcessed" content="Javascript:handleScan('%s','%s','%s');">
     <link rel="apple-touch-icon" href="/logo192.png"/>
     <link rel="manifest" href="/manifest.json"/>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
     <script>
-      function handleScan(n,o,e,c,l){
+      function handleScan(n,o,e){
         console.log("Test scan done"),
-          console.log(n,o,e,c,l),
+          console.log(n,o,e),
           alert("Scan done"+JSON.stringify(n))}
     </script>
     <title>React App!</title>
