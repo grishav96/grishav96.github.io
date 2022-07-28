@@ -8,6 +8,7 @@
     <meta http-equiv="Scanner" content="Enable">
     <meta http-equiv="Scanner" content="NoAuto">
     <meta http-equiv="ALL_DECODERS" content="Enabled">
+    <meta http-equiv="ScannerNavigate" content="Javascript:navigateScan('%s','%s','%s');">
     <meta http-equiv="ScannerProcessed" content="Javascript:handleScan('%s','%s','%s');">
     <link rel="apple-touch-icon" href="/logo192.png"/>
     <link rel="manifest" href="/manifest.json"/>
@@ -17,6 +18,13 @@
         console.log("Test scan done"),
           console.log(n,o,e),
           alert("Scan done"+JSON.stringify(n))}
+    </script>
+    <script>
+      function navigateScan(n,o,e){
+        console.log("Navigate Scan"),
+          console.log(n,o,e)
+      
+      }
     </script>
     <title>React App!</title>
     <script defer="defer" src="/static/js/main.b64d3e05.js"></script>
